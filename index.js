@@ -14,7 +14,7 @@ function getAllProducts() {
     
         for(let i=0;i<json.length;i++){
             let temp = json[i];
-            newTableEntries(productTable,temp["id"], "£"+temp["cost"],temp["stock"], temp["category"], temp["description"],temp["productName"]);
+            newTableEntries(productTable,temp["id"],temp["cost"],temp["stock"], temp["category"], temp["description"],temp["productName"]);
         }
     }
     }
