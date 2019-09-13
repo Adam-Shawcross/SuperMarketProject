@@ -9,7 +9,7 @@ function submitHandler(form){
     const url = "http://34.89.0.54:9000/products"
     const req = new XMLHttpRequest();
 
-    req.open("Post", url);
+    req.open("POST", url);
     req.onload = () => {
 
         if(req.status > 200 && req.status < 300){
@@ -17,6 +17,7 @@ function submitHandler(form){
         }
         else{
             console.log("failure!!")
+            console.log(req.status);
         }
 
         
