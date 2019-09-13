@@ -68,3 +68,18 @@ function submitHandler(form){
     return false;
 
 }
+
+function deleteProduct(){
+
+    var id = document.getElementById("id").value
+    var xhr = new XMLHttpRequest();
+    var url = "http://34.89.0.54:9000/products/";
+    xhr.open("DELETE", url+id, true);
+    //xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onload = () => {
+
+    
+    }
+    xhr.send(null);
+    return false;
+}
