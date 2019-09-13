@@ -19,10 +19,11 @@ function submitHandler(form){
             console.log("failure!!")
         }
 
-        return false;
+        
     }
     req.setRequestHeader("Content-Type", "application/json");
 
     req.send(JSON.stringify(fields));
-
+    
+    return false;
 }
