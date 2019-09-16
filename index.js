@@ -58,8 +58,6 @@ function submitHandler(form){
             console.log("failure!!")
             console.log(req.status);
         }
-
-        
     }
     req.setRequestHeader("Content-Type", "application/json");
 
